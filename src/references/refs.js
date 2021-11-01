@@ -1,4 +1,4 @@
 export default {
-  inputSearch: document.getElementById('inputCountry'),
-  countryResult: document.getElementById('countryList'),
+  searchForm: document.getElementById('search-form'),
+  marcupList: document.querySelector('.gallery'),
 };

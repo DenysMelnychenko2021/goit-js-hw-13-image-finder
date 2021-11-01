@@ -1,32 +1,71 @@
-*,
-*::before,
-*::after {
+html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #333333;
-  color: #fff;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-    'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
+  background-color: #fff;
+  color: #212121;
 }
-
-.input {
-  width: 300px;
-  margin: 0 auto;
-  margin-top: 30px;
-  // margin-bottom: 30px;
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
 }
-
-.card {
-  margin: 0 auto;
-
+.box-form {
   display: flex;
-  max-width: 600px;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  margin-bottom: 30px;
 }
 
-.card li {
-  padding: 15px;
+.button {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 10px;
+}
+
+.gallery {
+  display: flex;
   list-style: none;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+  padding: 0px;
+}
+.gallery li {
+  width: 100%;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+.stats {
+  display: flex;
+}
+.stats-item {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+}
+.material-icons {
+  padding: 5px;
+}
+.scroll-style {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.5s ease-in;
 }

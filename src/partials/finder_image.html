@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <title>goit-js-hw-13-image-finder</title>
+  </head>
+  <body id="top">
+    <div class="container">
+      <div class="box-form">
+        <form class="search-form" id="search-form">
+          <input
+            id="search-input"
+            type="text"
+            name="query"
+            autocomplete="off"
+            placeholder="Search images..."
+          />
+          <button class="button">Load more</button>
+        </form>
+      </div>
+
+      <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+      </ul>
+      <a
+        href="#top"
+        style="
+          display: block;
+          position: fixed;
+          /*положение кнопки*/
+          bottom: 30px;
+          right: 30px;
+          /*оформление кнопки*/
+          width: 64px;
+          height: 32px;
+          padding: 12px 10px 2px;
+          font-size: 16px;
+          background: #ddd;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+        "
+        >Вверх</a
+      >
+    </div>
+  </body>
+</html>
