@@ -2,7 +2,7 @@ import refs from '../references/refs';
 import templateImages from '../templates/template.handlebars';
 import API from './apiService';
 
-const { searchForm, marcupList, scrollUp } = refs;
+const { searchForm, marcupList } = refs;
 
 const fetchImages = new API();
 
